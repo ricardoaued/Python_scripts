@@ -1,0 +1,7 @@
+import math
+y = float(input('Digite o valor de um cateto do triangulo'))
+x = float(input('Digite o valor do outro cateto do triangulo'))
+z = math.sqrt((x**2 + y**2))
+print('A hipotenusa desse triangulo é',z)
+
+#z = math.hypot(y, x) ou from math import hypot e hypot(x, y)
