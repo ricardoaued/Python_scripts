@@ -1,0 +1,22 @@
+cont = cont2 =cont3 =0
+while True:
+    x = int(input('Qual a sua idade?'))
+    y = str(input('Qual o seu sexo [F/M]')).strip().upper()
+    z = str(input('Voce quer continuar os cadastros?')).strip().upper()
+    while x !=int:
+        x = int(input('Qual a sua idade?'))
+        if x==int:
+            break
+    while y !=str:
+        y = str(input('Qual o seu sexo [F/M]')).strip().upper()
+    while z !='S' or z!='N':
+        z = str(input('Voce quer continuar os cadastros?')).strip().upper()
+    if x<18:
+        cont = cont +1
+    if y=='M':
+        cont2 = cont
+    if x<20 and y=='F':
+        cont3 = cont
+    if z=='N' or z=='Não':
+        break
+print(f'Há {cont} com menos de 18 anos, tendo {cont2} homens cadastrados e com {cont3} mulheres com menos de 20 anos')
